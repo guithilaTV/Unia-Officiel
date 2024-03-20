@@ -1,0 +1,129 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: 768px) {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+}
+
+.espace {
+    margin-top: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    font-family: Barlow;
+    background: url(test1.png);
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+
+h1{
+    font-size: 35px;
+    font-family: Mouse Memoirs;
+    color: #0D3D5F;
+}
+
+.card {
+    width: 25%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0px -4px 0px 0px #0F0B2C80 inset;
+
+    @media only screen and (max-width: 768px) {
+        width: 90%;
+    }
+}
+
+button{
+    Width: 150px;
+    height: 46px;
+    border-radius : 10px;
+    background-color: #8538A6;
+    color: white;
+    border: 0px solid;
+    box-shadow: 0px -4px 0px 0px #0F0B2C80 inset;
+
+    font-family: Mouse Memoirs;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 19.2px;
+    text-align: center;
+    cursor: pointer;
+
+    transition: 0.2s ease-in;
+}
+
+
+button:hover{
+    box-shadow: none;
+    margin-top: 4px;
+    background-color:#330066;
+    transition: 0.2s ease-in;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input {
+    background-color: rgb(242, 242, 242);
+
+}
+
+#mail {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px solid;
+}
+
+#mdp {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 0px 0px 10px 10px;
+    border: 0px solid;
+}
